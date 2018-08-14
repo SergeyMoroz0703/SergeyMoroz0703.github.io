@@ -30,16 +30,16 @@
         #position { border-bottom: 1px solid #999; }
         #title1 {padding-bottom: 4px; }
         #mainid { width: 1000px; height: auto; border:1px solid black;margin:30px auto; border-radius:2%;background-color:white;}
-        .myskills {height:260px; }
+        .myskills {height:35px; margin-left: -50px; }
         .myexp {height: 750px;}
         .myedu {height: 35px; margin-left: -50px; }
         .pq {height: 120px}
 
 
         /*Popup menu styles*/
-        .reference ~ #edustory {display: none; height: 130px}
+        .reference ~ .story {display: none; height: 130px}
         .reference + label {cursor: pointer;display: inline-block;}
-        .reference:checked ~ #edustory {display:block; padding-left: 10px; border-left: 1px solid black; }
+        .reference:checked ~ .story {display:block; padding-left: 10px; border-left: 1px solid black; }
 
         /* Checkbox animation styles */
         .reference { margin-bottom: 5px; position: relative; border-radius: 20px; background: #999; outline: 0; -webkit-appearance: none; cursor: pointer; }
@@ -83,7 +83,7 @@
 
             <div> <input type="checkbox" id="hd-1" class="reference"/>
                 <dt class="myedu"> Education </dt>
-            <dd id="edustory">
+            <dd class="story">
                 <h2>Kiev Polytechnic Institute, Kiev (2009-2015)</h2>
                 <p><strong>Master:</strong> Physical Materialize Science<br />
                 <h2>QATestLab (2013)</h2>
@@ -93,9 +93,12 @@
 
 
             <dd class="clear"></dd>
-            
+
+
+
+            <div> <input type="checkbox" id="hd-2" class="reference"/>
             <dt class="myskills">Skills</dt>
-            <dd>
+            <dd class="story">
                 <ul type="disc">
                 <li>English – Intermediate</li>
                 <li>Experience in Selenium 2.0 (Python), pytest.</li>
@@ -107,7 +110,7 @@
                 <li>Understanding of SDLC and bug lifecycles;</li>
                 <li>OS: Linux (Ubuntu), Linux server (Debian, Ubuntu), Windows</li>
                 <li>Bug Tracking System: good skills in Redmine, GitLab, basic Jira</li>
-
+            </div>
 
 
 
@@ -117,10 +120,7 @@
             
             <dt class="myexp">Experience</dt>
             <dd>
-                <h2>Will add QA experience some later<span><a href="https://goantifraud.com/">GoAntiFraud </a>(June2017-till now)</span></h2>
-                <ul>
 
-                </ul>
 
                 <h2>Head Of Technical Support 3rd line<span><a href="https://goantifraud.com/">GoAntiFraud </a>(December2017-June2017)</span></h2>
                 <ul>
