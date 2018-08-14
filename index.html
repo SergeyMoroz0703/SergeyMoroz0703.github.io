@@ -23,7 +23,7 @@
         ul { margin: 0 0 32px 17px; }
         #objective { width: 500px; float: left; }
         #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; font-size:25px; padding-top: 20px; }
-        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 200px; border-right: 1px solid #999;  }
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 13px 0 0; width: 150px; float: left; height: 200px; }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px;}
         .fn {width: 660px; font-family: 'Bitter', serif;color: rgba(0,0,0,0.7); text-shadow: 2px 3px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3); }
@@ -32,8 +32,21 @@
         #mainid { width: 1000px; height: auto; border:1px solid black;margin:30px auto; border-radius:2%;background-color:white;}
         .myskills {height:260px; }
         .myexp {height: 750px;}
-        .myedu {height: 130px;}
+        .myedu {height: 35px; margin-left: -50px; }
         .pq {height: 120px}
+
+
+        /*Popup menu styles*/
+        .reference ~ #edustory {display: none; height: 130px}
+        .reference + label {cursor: pointer;display: inline-block;}
+        .reference:checked ~ #edustory {display:block; padding-left: 10px; border-left: 1px solid black; }
+
+        /* Checkbox animation styles */
+        .reference { margin-bottom: 5px; position: relative; border-radius: 20px; background: #999; outline: 0; -webkit-appearance: none; cursor: pointer; }
+        .reference::after { content: ''; position: absolute; top: 2px; left: 2px; display: block; width: calc((100% - 4px) / 2); height: calc(100% - 4px); border-radius: 50%; background: #eee; transition: all .1s linear; }
+        .reference:checked { background: #5b5; }
+        .reference:checked::after { transform: translateX(100%);}
+        input { width: 40px; height: 21px; }
 
 
 
@@ -67,15 +80,18 @@
 
         <dl>
             <dd class="clear"></dd>
-            
-            <dt class="myedu">Education</dt>
-            <dd>
+
+            <div> <input type="checkbox" id="hd-1" class="reference"/>
+                <dt class="myedu"> Education </dt>
+            <dd id="edustory">
                 <h2>Kiev Polytechnic Institute, Kiev (2009-2015)</h2>
                 <p><strong>Master:</strong> Physical Materialize Science<br />
                 <h2>QATestLab (2013)</h2>
                 <p> QA Engineering<br />
             </dd>
-            
+            </div>
+
+
             <dd class="clear"></dd>
             
             <dt class="myskills">Skills</dt>
