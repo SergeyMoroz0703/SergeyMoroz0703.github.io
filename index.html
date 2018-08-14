@@ -44,8 +44,10 @@
 
         /*Popup menu styles*/
         .reference ~ .story {display: none; height: 130px}
+        .reference ~ .skillsstory {display: none; height: 280px}
         .reference + label {cursor: pointer;display: inline-block;}
         .reference:checked ~ .story {display:block; padding-left: 10px; border-left: 1px solid black; }
+        .reference:checked ~ .skillsstory {display:block; padding-left: 10px; border-left: 1px solid black; }
 
         /* Checkbox animation styles */
         .reference { margin-bottom: 5px; position: relative; border-radius: 20px; background: #999; outline: 0; -webkit-appearance: none; cursor: pointer; }
@@ -119,7 +121,7 @@ teamwork attitude, excellent interpersonal and communicational skills, and
 
             <div> <input type="checkbox" id="hd-2" class="reference"/>
             <dt class="myskills">Skills</dt>
-            <dd class="story">
+            <dd class="skillsstory">
                 <ul type="disc">
                 <li>English – Intermediate</li>
                 <li>Experience in Selenium 2.0 (Python), pytest.</li>
