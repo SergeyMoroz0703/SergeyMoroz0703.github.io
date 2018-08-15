@@ -32,11 +32,14 @@
         #mainid { width: 1000px; height: auto; border:1px solid black;margin:30px auto; border-radius:2%;background-color:white;}
         .summarytopic {height: 35px; margin-left: -50px;display: block;}
 
-        .goaf {width: 70px; height: 70px; }
 
-        #posname {width: 500px; font-family: monospace; }
-        .jobhead {margin-left: 90px; margin-top: -55px; margin-bottom: -8px;}
+
+        .goaf {width: 70px; height: 70px; }
+        .jobhead {margin-left: 90px; margin-top: -55px; margin-bottom: -8px; width: 500px; font-family: monospace;}
         .jobdate {margin-left: 90px;margin-bottom: 10px; font-family: cursive;}
+        .jobhead_2 {margin-left: 150px; margin-top: -55px; margin-bottom: -8px; width: 500px; font-family: monospace;}
+        .jobdate_2 {margin-left: 150px;margin-bottom: 10px; font-family: cursive;}
+
 
 
         /* CV menu styles */
@@ -50,12 +53,12 @@
         /*Popup menu styles*/
         .reference ~ .story {visibility: hidden; opacity: 0; height: 0px; }
         .reference ~ .skillsstory {visibility: hidden; opacity: 0; height: 0px; }
-        .reference ~ .expstory{visibility: hidden; opacity: 0; height: 0px;}
+        .reference ~ .expstory {visibility: hidden; opacity: 0; height: 0px;}
         .reference ~ .personalstory {visibility: hidden; opacity: 0; height: 0px;}
         .reference + label {cursor: pointer;display: inline-block;}
         .reference:checked ~ .story {display:block; padding-left: 10px; border-left: 1px solid black; height: 130px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
         .reference:checked ~ .skillsstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 270px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
-        .reference:checked ~ .expstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 690px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
+        .reference:checked ~ .expstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 840px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
         .reference:checked ~ .personalstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 120px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
 
 
@@ -151,11 +154,39 @@ The regression functional tests were automated using Python/WebDriver and relate
             <dt class="myexp">Experience</dt>
             <dd class="expstory">
 
-                <div class="goaf">
-                    <a href="https://goantifraud.com/"><img height = 60px, width = 60px, src="images/goaf.JPG" alt="goantifraud"/></a>
-                </div>
+                <a href="https://www.softserveinc.com/en-us/"><img height = 60px, width = 60px, src="images/softserve.jpg" alt="softserve"/></a>
+                <a href="https://www.atlassian.com/"><img height = 60px, width = 70px, src="images/atlassian.jpg" alt="atlassian"/></a>
+                <div class="jobhead_2"><h2>Automation QA Engineer</h2></div>
+                <div class="jobdate_2"><a href="https://goantifraud.com/">SoftServe, Atlassian </a>(February 2018-till now)</div>
 
-                <div class="jobhead"><h2 id="posname">Head Of Technical Support 3rd line</h2></div>
+                <ul>
+                    <li>Team Management (about 10 people)</li>
+                    <li>Monitoring and administration different Linux servers</li>
+                    <li>Develop and testing users owner development (AGI,AMI Asterisk scripts using Python, Unix shell)</li>
+                    <li>Writing testing documentation, manual for user's specific development</li>
+                    <li>Testing new front/back functional of the system</li>
+                    <li>Analyze users data and optimize service functional</li>
+                    <li>System stability monitoring, setup (Zabbix)</li>
+                </ul>
+
+
+                <a href="https://goantifraud.com/"><img height = 60px, width = 60px, src="images/goaf.JPG" alt="goantifraud"/></a>
+                <div class="jobhead"><h2>Automation QA Engineer</h2></div>
+                <div class="jobdate"><a href="https://goantifraud.com/">GoAntiFraud </a>(December 2017-June 2017)</div>
+
+                <ul>
+                    <li>Team Management (about 10 people)</li>
+                    <li>Monitoring and administration different Linux servers</li>
+                    <li>Develop and testing users owner development (AGI,AMI Asterisk scripts using Python, Unix shell)</li>
+                    <li>Writing testing documentation, manual for user's specific development</li>
+                    <li>Testing new front/back functional of the system</li>
+                    <li>Analyze users data and optimize service functional</li>
+                    <li>System stability monitoring, setup (Zabbix)</li>
+                </ul>
+
+
+                <a href="https://goantifraud.com/"><img height = 60px, width = 60px, src="images/goaf.JPG" alt="goantifraud"/></a>
+                <div class="jobhead"><h2 id="posname1">Head Of Technical Support 3rd line</h2></div>
                 <div class="jobdate"><a href="https://goantifraud.com/">GoAntiFraud </a>(December 2017-June 2017)</div>
 
 
@@ -168,6 +199,8 @@ The regression functional tests were automated using Python/WebDriver and relate
                     <li>Analyze users data and optimize service functional</li>
                     <li>System stability monitoring, setup (Zabbix)</li>
                 </ul>
+
+
 
 
 
