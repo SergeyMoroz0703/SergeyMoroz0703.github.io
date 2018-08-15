@@ -43,13 +43,13 @@
 
 
         /*Popup menu styles*/
-        .reference ~ .story {display:none;  }
-        .reference ~ .skillsstory {display: none; height: 270px; }
-        .reference ~ .expstory {display: none; height: 690px; }
+        .reference ~ .story {visibility: hidden; opacity: 0; height: 0px; }
+        .reference ~ .skillsstory {visibility: hidden; opacity: 0; height: 0px; }
+        .reference ~ .expstory {visibility: hidden; opacity: 0; height: 0px;}
         .reference + label {cursor: pointer;display: inline-block;}
-        .reference:checked ~ .story {display:block; padding-left: 10px; border-left: 1px solid black; height: 130px; }
-        .reference:checked ~ .skillsstory {display:block; padding-left: 10px; border-left: 1px solid black; }
-        .reference:checked ~ .expstory {display:block; padding-left: 10px; border-left: 1px solid black; }
+        .reference:checked ~ .story {display:block; padding-left: 10px; border-left: 1px solid black; height: 130px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
+        .reference:checked ~ .skillsstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 270px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
+        .reference:checked ~ .expstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 690px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
 
         /* Checkbox animation styles */
         .reference { margin-bottom: 5px; position: relative; border-radius: 20px; background: #999; outline: 0; -webkit-appearance: none; cursor: pointer; }
