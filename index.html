@@ -22,7 +22,6 @@
         a { color: #272822; text-decoration: none; border-bottom: 1px dotted #999; }
         a:hover { border-bottom-style: solid; color: black; }
         ul { margin: 0 0 32px 17px; }
-        #objective { width: 500px; float: left; }
         #objective p { font-family: Georgia, Serif; font-style: italic; color: #666; font-size:25px; padding-top: 20px; }
         dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 13px 0 0; width: 150px; float: left; height: 200px; }
         dd { width: 600px; float: right; }
@@ -33,27 +32,31 @@
         #mainid { width: 1000px; height: auto; border:1px solid black;margin:30px auto; border-radius:2%;background-color:white;}
         .summarytopic {height: 35px; margin-left: -50px;display: block;}
 
+        .goaf {width: 70px; height: 70px; }
 
+        #posname {width: 500px; font-family: monospace; }
+        .jobhead {margin-left: 90px; margin-top: -55px; margin-bottom: -8px;}
+        .jobdate {margin-left: 90px;margin-bottom: 10px; font-family: cursive;}
+
+
+        /* CV menu styles */
         .sumstory {display: inline-block; margin-left: 15px;}
-
         .myskills {height:35px; margin-left: -50px; }
         .myexp {height: 35px; margin-left: -50px;}
         .myedu {height: 35px; margin-left: -50px; }
         .mypersonal {height: 35px; margin-left: -50px; }
         .ref {font-style: italic; font-size: 16px; float:left; font-weight: bold; margin-top: 50px; }
 
-
         /*Popup menu styles*/
         .reference ~ .story {visibility: hidden; opacity: 0; height: 0px; }
         .reference ~ .skillsstory {visibility: hidden; opacity: 0; height: 0px; }
-        .reference ~ .expstory {visibility: hidden; opacity: 0; height: 0px;}
+        .reference ~ .expstory{visibility: hidden; opacity: 0; height: 0px;}
         .reference ~ .personalstory {visibility: hidden; opacity: 0; height: 0px;}
         .reference + label {cursor: pointer;display: inline-block;}
         .reference:checked ~ .story {display:block; padding-left: 10px; border-left: 1px solid black; height: 130px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
         .reference:checked ~ .skillsstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 270px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
         .reference:checked ~ .expstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 690px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
         .reference:checked ~ .personalstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 120px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
-
 
 
         /* Checkbox animation styles */
@@ -98,12 +101,8 @@
             <div class="sumstory"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have 2 year of experience in software industry as an Automation QC Engineer and about 3
     years in software industry in total. <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have carried out test planning, requirements analysis, test design
 including test cases and checklists, software testing and automated testing. Experienced in backend API, CLI testing. <br> I have been involved in automated testing of complex web
-application with numerous events and services.
+application with numerous events and services. English level is Intermediate.
 The regression functional tests were automated using Python/WebDriver and related testing tools.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have good skills in problem detecting and solving. I am open-minded and goal-oriented. I have active
-teamwork attitude, excellent interpersonal and communicational skills, and
-                quick learning ability. I have excellent customer service skills. <br> English level is Intermediate.
-
             </div>
 
 
@@ -152,7 +151,14 @@ teamwork attitude, excellent interpersonal and communicational skills, and
             <dt class="myexp">Experience</dt>
             <dd class="expstory">
 
-                <h2>Head Of Technical Support 3rd line<span><a href="https://goantifraud.com/">GoAntiFraud </a>(December2017-June2017)</span></h2>
+                <div class="goaf">
+                    <a href="https://goantifraud.com/"><img height = 60px, width = 60px, src="images/goaf.JPG" alt="goantifraud"/></a>
+                </div>
+
+                <div class="jobhead"><h2 id="posname">Head Of Technical Support 3rd line</h2></div>
+                <div class="jobdate"><a href="https://goantifraud.com/">GoAntiFraud </a>(December 2017-June 2017)</div>
+
+
                 <ul>
                     <li>Team Management (about 10 people)</li>
                     <li>Monitoring and administration different Linux servers</li>
@@ -161,26 +167,6 @@ teamwork attitude, excellent interpersonal and communicational skills, and
                     <li>Testing new front/back functional of the system</li>
                     <li>Analyze users data and optimize service functional</li>
                     <li>System stability monitoring, setup (Zabbix)</li>
-                </ul>
-
-                <h2>Supervisor of technical support<span><a href="https://goantifraud.com/">GoAntiFraud </a>(September2016-December2016)</span></h2>
-                <ul>
-                    <li>Instructions executionion of the head of support department</li>
-                    <li>Monitoring an enterprise infrastructure via various tools and open proper tickets with the appropriate information for a quick resolution</li>
-                    <li>Quickly and efficiently address customer needs by providing solutions to customer issues or escalating to another support group when necessary</li>
-                    <li>Working with TCP/IP, HTTPS and another protocols which used in product</li>
-                    <li>Writing customers manuals</li>
-                    <li>Training new employees</li>
-                    <li>Maintaining, managing and monitoring remote *nix servers running</li>
-
-                </ul>
-                <h2>Technical Support<span><a href="https://goantifraud.com/">GoAntiFraud </a>(August 2015-September2016)</span></h2>
-                <ul>
-                    <li>Provide thorough support and problem resolution for customers</li>
-                    <li>Providing customer informed of progress during issue lifecycle</li>
-                    <li>Follow up sending issue in next support line if it necessary</li>
-                    <li>Updating self-help documents so customers/employees can try to fix problems themselves</li>
-
                 </ul>
 
 
