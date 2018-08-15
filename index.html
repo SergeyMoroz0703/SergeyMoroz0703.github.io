@@ -39,17 +39,22 @@
         .myskills {height:35px; margin-left: -50px; }
         .myexp {height: 35px; margin-left: -50px;}
         .myedu {height: 35px; margin-left: -50px; }
-        .pq {height: 120px}
+        .mypersonal {height: 35px; margin-left: -50px; }
+        .ref {font-style: italic; font-size: 16px; float:left; font-weight: bold; margin-top: 50px; }
 
 
         /*Popup menu styles*/
         .reference ~ .story {visibility: hidden; opacity: 0; height: 0px; }
         .reference ~ .skillsstory {visibility: hidden; opacity: 0; height: 0px; }
         .reference ~ .expstory {visibility: hidden; opacity: 0; height: 0px;}
+        .reference ~ .personalstory {visibility: hidden; opacity: 0; height: 0px;}
         .reference + label {cursor: pointer;display: inline-block;}
         .reference:checked ~ .story {display:block; padding-left: 10px; border-left: 1px solid black; height: 130px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
         .reference:checked ~ .skillsstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 270px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
         .reference:checked ~ .expstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 690px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
+        .reference:checked ~ .personalstory {display:block; padding-left: 10px; border-left: 1px solid black; height: 110px; visibility: visible; opacity: 1; transition: opacity 1s linear;}
+
+
 
         /* Checkbox animation styles */
         .reference { margin-bottom: 5px; position: relative; border-radius: 20px; background: #999; outline: 0; -webkit-appearance: none; cursor: pointer; }
@@ -185,22 +190,24 @@ teamwork attitude, excellent interpersonal and communicational skills, and
 
 
             <dd class="clear"></dd>
-            
-            <dt class="pq">Personal qualities</dt>
-            <dd><ul>
+            <div> <input type="checkbox" id="hd-4" class="reference"/>
+            <dt class="mypersonal">Personal qualities</dt>
+            <dd class="personalstory"><ul>
                     <li>Team Management (about 10 people)</li>
                     <li>Attentive to detail, scrupulous</li>
                     <li>Fully adapted to learning</li>
                     <li>Responsible, own organizational skills</li>
                     <li>I appreciate the work in a friendly team and be subordinate</li>
             </ul> </dd>
+            </div>
             
             <dd class="clear"></dd>
-            
-            <dt>References</dt>
-            <dd>Available on request</dd>
-            
-            <dd class="clear"></dd>
+
+
+            <div class="ref">
+                   ** References available on request
+            </div>
+
         </dl>
         
         <div class="clear"></div>
