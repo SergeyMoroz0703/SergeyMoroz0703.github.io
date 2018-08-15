@@ -37,17 +37,19 @@
         .sumstory {display: inline-block; margin-left: 15px;}
 
         .myskills {height:35px; margin-left: -50px; }
-        .myexp {height: 750px;}
+        .myexp {height: 35px; margin-left: -50px;}
         .myedu {height: 35px; margin-left: -50px; }
         .pq {height: 120px}
 
 
         /*Popup menu styles*/
-        .reference ~ .story {display: none; height: 130px}
-        .reference ~ .skillsstory {display: none; height: 280px}
+        .reference ~ .story {display:none;  }
+        .reference ~ .skillsstory {display: none; height: 270px; }
+        .reference ~ .expstory {display: none; height: 690px; }
         .reference + label {cursor: pointer;display: inline-block;}
-        .reference:checked ~ .story {display:block; padding-left: 10px; border-left: 1px solid black; }
+        .reference:checked ~ .story {display:block; padding-left: 10px; border-left: 1px solid black; height: 130px; }
         .reference:checked ~ .skillsstory {display:block; padding-left: 10px; border-left: 1px solid black; }
+        .reference:checked ~ .expstory {display:block; padding-left: 10px; border-left: 1px solid black; }
 
         /* Checkbox animation styles */
         .reference { margin-bottom: 5px; position: relative; border-radius: 20px; background: #999; outline: 0; -webkit-appearance: none; cursor: pointer; }
@@ -140,10 +142,10 @@ teamwork attitude, excellent interpersonal and communicational skills, and
             </dd>
             
             <dd class="clear"></dd>
-            
-            <dt class="myexp">Experience</dt>
-            <dd>
 
+            <div> <input type="checkbox" id="hd-3" class="reference"/>
+            <dt class="myexp">Experience</dt>
+            <dd class="expstory">
 
                 <h2>Head Of Technical Support 3rd line<span><a href="https://goantifraud.com/">GoAntiFraud </a>(December2017-June2017)</span></h2>
                 <ul>
@@ -179,7 +181,9 @@ teamwork attitude, excellent interpersonal and communicational skills, and
 
 
             </dd>
-            
+            </div>
+
+
             <dd class="clear"></dd>
             
             <dt class="pq">Personal qualities</dt>
